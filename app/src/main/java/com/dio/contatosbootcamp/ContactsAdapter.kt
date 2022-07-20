@@ -25,10 +25,10 @@ class ContactsAdapter(val contactsList:ArrayList<Contact>): RecyclerView.Adapter
         fun bindItem(contact: Contact ) {
 
             val textName = itemView.findViewById<TextView>(R.id.contact_name)
-            val phone = itemView.findViewById<TextView>(R.id.contact_phone_number)
+            val textPhone = itemView.findViewById<TextView>(R.id.contact_phone_number)
 
             textName.text = contact.name
-            textName.text = contact.phoneNumber
+            textPhone.text = contact.phoneNumber
         }
 
     }
